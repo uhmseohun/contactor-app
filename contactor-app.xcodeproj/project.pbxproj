@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD990A5425FB4D8B00174252 /* contactor_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A5325FB4D8B00174252 /* contactor_appApp.swift */; };
+		FD990A5625FB4D8B00174252 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A5525FB4D8B00174252 /* ContentView.swift */; };
+		FD990A5825FB4D8D00174252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD990A5725FB4D8D00174252 /* Assets.xcassets */; };
+		FD990A5B25FB4D8D00174252 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD990A5A25FB4D8D00174252 /* Preview Assets.xcassets */; };
+		FD990A6625FB4D8D00174252 /* contactor_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A6525FB4D8D00174252 /* contactor_appTests.swift */; };
+		FD990A7125FB4D8D00174252 /* contactor_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A7025FB4D8D00174252 /* contactor_appUITests.swift */; };
+		FD990A8625FB4DB300174252 /* VaccineCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A8525FB4DB300174252 /* VaccineCenter.swift */; };
+		FD990A9A25FB4DCF00174252 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A9925FB4DCF00174252 /* Spacer.swift */; };
+		FD990AAC25FB4E0400174252 /* SpoqaHanSansNeo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD990AA725FB4E0100174252 /* SpoqaHanSansNeo-Light.ttf */; };
+		FD990AAD25FB4E0400174252 /* SpoqaHanSansNeo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD990AA825FB4E0200174252 /* SpoqaHanSansNeo-Thin.ttf */; };
+		FD990AAE25FB4E0400174252 /* SpoqaHanSansNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD990AA925FB4E0200174252 /* SpoqaHanSansNeo-Regular.ttf */; };
+		FD990AAF25FB4E0400174252 /* SpoqaHanSansNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD990AAA25FB4E0300174252 /* SpoqaHanSansNeo-Bold.ttf */; };
+		FD990AB025FB4E0400174252 /* SpoqaHanSansNeo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD990AAB25FB4E0400174252 /* SpoqaHanSansNeo-Medium.ttf */; };
+		FD990AB625FB4E1200174252 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990AB525FB4E1200174252 /* TextField.swift */; };
+		FD990ABE25FB4E2500174252 /* ShadowBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990ABD25FB4E2500174252 /* ShadowBox.swift */; };
+		FD990AC425FB4E3A00174252 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990AC325FB4E3A00174252 /* Login.swift */; };
+		FD990ACC25FB4E4700174252 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990ACB25FB4E4700174252 /* Main.swift */; };
+		FD990AD125FB4E8B00174252 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990AD025FB4E8B00174252 /* LocationFetcher.swift */; };
+		FD990AD625FB4ED000174252 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990AD525FB4ED000174252 /* FontStyles.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD990A6225FB4D8D00174252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD990A4825FB4D8B00174252 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD990A4F25FB4D8B00174252;
+			remoteInfo = "contactor-app";
+		};
+		FD990A6D25FB4D8D00174252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD990A4825FB4D8B00174252 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD990A4F25FB4D8B00174252;
+			remoteInfo = "contactor-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD990A5025FB4D8B00174252 /* contactor-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "contactor-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD990A5325FB4D8B00174252 /* contactor_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactor_appApp.swift; sourceTree = "<group>"; };
+		FD990A5525FB4D8B00174252 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD990A5725FB4D8D00174252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD990A5A25FB4D8D00174252 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD990A5C25FB4D8D00174252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD990A6125FB4D8D00174252 /* contactor-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "contactor-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD990A6525FB4D8D00174252 /* contactor_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactor_appTests.swift; sourceTree = "<group>"; };
+		FD990A6725FB4D8D00174252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD990A6C25FB4D8D00174252 /* contactor-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "contactor-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD990A7025FB4D8D00174252 /* contactor_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactor_appUITests.swift; sourceTree = "<group>"; };
+		FD990A7225FB4D8D00174252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD990A8525FB4DB300174252 /* VaccineCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineCenter.swift; sourceTree = "<group>"; };
+		FD990A9925FB4DCF00174252 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
+		FD990AA725FB4E0100174252 /* SpoqaHanSansNeo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.ttf"; sourceTree = "<group>"; };
+		FD990AA825FB4E0200174252 /* SpoqaHanSansNeo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Thin.ttf"; sourceTree = "<group>"; };
+		FD990AA925FB4E0200174252 /* SpoqaHanSansNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.ttf"; sourceTree = "<group>"; };
+		FD990AAA25FB4E0300174252 /* SpoqaHanSansNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.ttf"; sourceTree = "<group>"; };
+		FD990AAB25FB4E0400174252 /* SpoqaHanSansNeo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.ttf"; sourceTree = "<group>"; };
+		FD990AB525FB4E1200174252 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		FD990ABD25FB4E2500174252 /* ShadowBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowBox.swift; sourceTree = "<group>"; };
+		FD990AC325FB4E3A00174252 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		FD990ACB25FB4E4700174252 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		FD990AD025FB4E8B00174252 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		FD990AD525FB4ED000174252 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD990A4D25FB4D8B00174252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD990A5E25FB4D8D00174252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD990A6925FB4D8D00174252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD990A4725FB4D8B00174252 = {
+			isa = PBXGroup;
+			children = (
+				FD990A5225FB4D8B00174252 /* contactor-app */,
+				FD990A6425FB4D8D00174252 /* contactor-appTests */,
+				FD990A6F25FB4D8D00174252 /* contactor-appUITests */,
+				FD990A5125FB4D8B00174252 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD990A5125FB4D8B00174252 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD990A5025FB4D8B00174252 /* contactor-app.app */,
+				FD990A6125FB4D8D00174252 /* contactor-appTests.xctest */,
+				FD990A6C25FB4D8D00174252 /* contactor-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD990A5225FB4D8B00174252 /* contactor-app */ = {
+			isa = PBXGroup;
+			children = (
+				FD990AC225FB4E3100174252 /* Views */,
+				FD990AB425FB4E0900174252 /* Modifiers */,
+				FD990AA625FB4DF200174252 /* Fonts */,
+				FD990A8D25FB4DBA00174252 /* Components */,
+				FD990A8425FB4DAD00174252 /* Data */,
+				FD990A5325FB4D8B00174252 /* contactor_appApp.swift */,
+				FD990A5525FB4D8B00174252 /* ContentView.swift */,
+				FD990A5725FB4D8D00174252 /* Assets.xcassets */,
+				FD990A5C25FB4D8D00174252 /* Info.plist */,
+				FD990A5925FB4D8D00174252 /* Preview Content */,
+				FD990AD025FB4E8B00174252 /* LocationFetcher.swift */,
+				FD990AD525FB4ED000174252 /* FontStyles.swift */,
+			);
+			path = "contactor-app";
+			sourceTree = "<group>";
+		};
+		FD990A5925FB4D8D00174252 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD990A5A25FB4D8D00174252 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD990A6425FB4D8D00174252 /* contactor-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD990A6525FB4D8D00174252 /* contactor_appTests.swift */,
+				FD990A6725FB4D8D00174252 /* Info.plist */,
+			);
+			path = "contactor-appTests";
+			sourceTree = "<group>";
+		};
+		FD990A6F25FB4D8D00174252 /* contactor-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD990A7025FB4D8D00174252 /* contactor_appUITests.swift */,
+				FD990A7225FB4D8D00174252 /* Info.plist */,
+			);
+			path = "contactor-appUITests";
+			sourceTree = "<group>";
+		};
+		FD990A8425FB4DAD00174252 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FD990A8525FB4DB300174252 /* VaccineCenter.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FD990A8D25FB4DBA00174252 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FD990A9925FB4DCF00174252 /* Spacer.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FD990AA625FB4DF200174252 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FD990AAA25FB4E0300174252 /* SpoqaHanSansNeo-Bold.ttf */,
+				FD990AA725FB4E0100174252 /* SpoqaHanSansNeo-Light.ttf */,
+				FD990AAB25FB4E0400174252 /* SpoqaHanSansNeo-Medium.ttf */,
+				FD990AA925FB4E0200174252 /* SpoqaHanSansNeo-Regular.ttf */,
+				FD990AA825FB4E0200174252 /* SpoqaHanSansNeo-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FD990AB425FB4E0900174252 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				FD990AB525FB4E1200174252 /* TextField.swift */,
+				FD990ABD25FB4E2500174252 /* ShadowBox.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		FD990AC225FB4E3100174252 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD990AC325FB4E3A00174252 /* Login.swift */,
+				FD990ACB25FB4E4700174252 /* Main.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD990A4F25FB4D8B00174252 /* contactor-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD990A7525FB4D8D00174252 /* Build configuration list for PBXNativeTarget "contactor-app" */;
+			buildPhases = (
+				FD990A4C25FB4D8B00174252 /* Sources */,
+				FD990A4D25FB4D8B00174252 /* Frameworks */,
+				FD990A4E25FB4D8B00174252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "contactor-app";
+			productName = "contactor-app";
+			productReference = FD990A5025FB4D8B00174252 /* contactor-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD990A6025FB4D8D00174252 /* contactor-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD990A7825FB4D8D00174252 /* Build configuration list for PBXNativeTarget "contactor-appTests" */;
+			buildPhases = (
+				FD990A5D25FB4D8D00174252 /* Sources */,
+				FD990A5E25FB4D8D00174252 /* Frameworks */,
+				FD990A5F25FB4D8D00174252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD990A6325FB4D8D00174252 /* PBXTargetDependency */,
+			);
+			name = "contactor-appTests";
+			productName = "contactor-appTests";
+			productReference = FD990A6125FB4D8D00174252 /* contactor-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD990A6B25FB4D8D00174252 /* contactor-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD990A7B25FB4D8D00174252 /* Build configuration list for PBXNativeTarget "contactor-appUITests" */;
+			buildPhases = (
+				FD990A6825FB4D8D00174252 /* Sources */,
+				FD990A6925FB4D8D00174252 /* Frameworks */,
+				FD990A6A25FB4D8D00174252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD990A6E25FB4D8D00174252 /* PBXTargetDependency */,
+			);
+			name = "contactor-appUITests";
+			productName = "contactor-appUITests";
+			productReference = FD990A6C25FB4D8D00174252 /* contactor-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD990A4825FB4D8B00174252 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FD990A4F25FB4D8B00174252 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FD990A6025FB4D8D00174252 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FD990A4F25FB4D8B00174252;
+					};
+					FD990A6B25FB4D8D00174252 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FD990A4F25FB4D8B00174252;
+					};
+				};
+			};
+			buildConfigurationList = FD990A4B25FB4D8B00174252 /* Build configuration list for PBXProject "contactor-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD990A4725FB4D8B00174252;
+			productRefGroup = FD990A5125FB4D8B00174252 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD990A4F25FB4D8B00174252 /* contactor-app */,
+				FD990A6025FB4D8D00174252 /* contactor-appTests */,
+				FD990A6B25FB4D8D00174252 /* contactor-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD990A4E25FB4D8B00174252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD990A5B25FB4D8D00174252 /* Preview Assets.xcassets in Resources */,
+				FD990AAC25FB4E0400174252 /* SpoqaHanSansNeo-Light.ttf in Resources */,
+				FD990AAD25FB4E0400174252 /* SpoqaHanSansNeo-Thin.ttf in Resources */,
+				FD990A5825FB4D8D00174252 /* Assets.xcassets in Resources */,
+				FD990AB025FB4E0400174252 /* SpoqaHanSansNeo-Medium.ttf in Resources */,
+				FD990AAF25FB4E0400174252 /* SpoqaHanSansNeo-Bold.ttf in Resources */,
+				FD990AAE25FB4E0400174252 /* SpoqaHanSansNeo-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD990A5F25FB4D8D00174252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD990A6A25FB4D8D00174252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD990A4C25FB4D8B00174252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD990AC425FB4E3A00174252 /* Login.swift in Sources */,
+				FD990A5625FB4D8B00174252 /* ContentView.swift in Sources */,
+				FD990ACC25FB4E4700174252 /* Main.swift in Sources */,
+				FD990A9A25FB4DCF00174252 /* Spacer.swift in Sources */,
+				FD990A5425FB4D8B00174252 /* contactor_appApp.swift in Sources */,
+				FD990ABE25FB4E2500174252 /* ShadowBox.swift in Sources */,
+				FD990AD625FB4ED000174252 /* FontStyles.swift in Sources */,
+				FD990AB625FB4E1200174252 /* TextField.swift in Sources */,
+				FD990A8625FB4DB300174252 /* VaccineCenter.swift in Sources */,
+				FD990AD125FB4E8B00174252 /* LocationFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD990A5D25FB4D8D00174252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD990A6625FB4D8D00174252 /* contactor_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD990A6825FB4D8D00174252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD990A7125FB4D8D00174252 /* contactor_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD990A6325FB4D8D00174252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD990A4F25FB4D8B00174252 /* contactor-app */;
+			targetProxy = FD990A6225FB4D8D00174252 /* PBXContainerItemProxy */;
+		};
+		FD990A6E25FB4D8D00174252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD990A4F25FB4D8B00174252 /* contactor-app */;
+			targetProxy = FD990A6D25FB4D8D00174252 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD990A7325FB4D8D00174252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD990A7425FB4D8D00174252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD990A7625FB4D8D00174252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"contactor-app/Preview Content\"";
+				DEVELOPMENT_TEAM = 22J59B6ARQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "contactor-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uhmseohun.contactor-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD990A7725FB4D8D00174252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"contactor-app/Preview Content\"";
+				DEVELOPMENT_TEAM = 22J59B6ARQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "contactor-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uhmseohun.contactor-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD990A7925FB4D8D00174252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22J59B6ARQ;
+				INFOPLIST_FILE = "contactor-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uhmseohun.contactor-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/contactor-app.app/contactor-app";
+			};
+			name = Debug;
+		};
+		FD990A7A25FB4D8D00174252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22J59B6ARQ;
+				INFOPLIST_FILE = "contactor-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uhmseohun.contactor-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/contactor-app.app/contactor-app";
+			};
+			name = Release;
+		};
+		FD990A7C25FB4D8D00174252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22J59B6ARQ;
+				INFOPLIST_FILE = "contactor-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uhmseohun.contactor-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "contactor-app";
+			};
+			name = Debug;
+		};
+		FD990A7D25FB4D8D00174252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22J59B6ARQ;
+				INFOPLIST_FILE = "contactor-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uhmseohun.contactor-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "contactor-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD990A4B25FB4D8B00174252 /* Build configuration list for PBXProject "contactor-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD990A7325FB4D8D00174252 /* Debug */,
+				FD990A7425FB4D8D00174252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD990A7525FB4D8D00174252 /* Build configuration list for PBXNativeTarget "contactor-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD990A7625FB4D8D00174252 /* Debug */,
+				FD990A7725FB4D8D00174252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD990A7825FB4D8D00174252 /* Build configuration list for PBXNativeTarget "contactor-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD990A7925FB4D8D00174252 /* Debug */,
+				FD990A7A25FB4D8D00174252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD990A7B25FB4D8D00174252 /* Build configuration list for PBXNativeTarget "contactor-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD990A7C25FB4D8D00174252 /* Debug */,
+				FD990A7D25FB4D8D00174252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD990A4825FB4D8B00174252 /* Project object */;
+}
