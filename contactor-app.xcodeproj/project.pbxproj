@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD22FDBE2603361300BC6A7B /* Join.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD22FDBD2603361300BC6A7B /* Join.swift */; };
 		FD990A5425FB4D8B00174252 /* contactor_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A5325FB4D8B00174252 /* contactor_appApp.swift */; };
 		FD990A5625FB4D8B00174252 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A5525FB4D8B00174252 /* ContentView.swift */; };
 		FD990A5825FB4D8D00174252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD990A5725FB4D8D00174252 /* Assets.xcassets */; };
 		FD990A5B25FB4D8D00174252 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD990A5A25FB4D8D00174252 /* Preview Assets.xcassets */; };
 		FD990A6625FB4D8D00174252 /* contactor_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A6525FB4D8D00174252 /* contactor_appTests.swift */; };
 		FD990A7125FB4D8D00174252 /* contactor_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A7025FB4D8D00174252 /* contactor_appUITests.swift */; };
-		FD990A8625FB4DB300174252 /* VaccineCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A8525FB4DB300174252 /* VaccineCenter.swift */; };
 		FD990A9A25FB4DCF00174252 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990A9925FB4DCF00174252 /* Spacer.swift */; };
 		FD990AAC25FB4E0400174252 /* SpoqaHanSansNeo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD990AA725FB4E0100174252 /* SpoqaHanSansNeo-Light.ttf */; };
 		FD990AAD25FB4E0400174252 /* SpoqaHanSansNeo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD990AA825FB4E0200174252 /* SpoqaHanSansNeo-Thin.ttf */; };
@@ -26,6 +26,11 @@
 		FD990ACC25FB4E4700174252 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990ACB25FB4E4700174252 /* Main.swift */; };
 		FD990AD125FB4E8B00174252 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990AD025FB4E8B00174252 /* LocationFetcher.swift */; };
 		FD990AD625FB4ED000174252 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD990AD525FB4ED000174252 /* FontStyles.swift */; };
+		FDF820AC26019EA600C439CA /* VaccineCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF820AB26019EA600C439CA /* VaccineCenter.swift */; };
+		FDF820B12601D19700C439CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF820B02601D19700C439CA /* User.swift */; };
+		FDF820B62601D24800C439CA /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF820B52601D24800C439CA /* Auth.swift */; };
+		FDF820BB2601D3C800C439CA /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF820BA2601D3C800C439CA /* RequestBuilder.swift */; };
+		FDF820C02601D4CA00C439CA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF820BF2601D4CA00C439CA /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD22FDBD2603361300BC6A7B /* Join.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join.swift; sourceTree = "<group>"; };
 		FD990A5025FB4D8B00174252 /* contactor-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "contactor-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD990A5325FB4D8B00174252 /* contactor_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactor_appApp.swift; sourceTree = "<group>"; };
 		FD990A5525FB4D8B00174252 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,7 +64,6 @@
 		FD990A6C25FB4D8D00174252 /* contactor-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "contactor-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD990A7025FB4D8D00174252 /* contactor_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactor_appUITests.swift; sourceTree = "<group>"; };
 		FD990A7225FB4D8D00174252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD990A8525FB4DB300174252 /* VaccineCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineCenter.swift; sourceTree = "<group>"; };
 		FD990A9925FB4DCF00174252 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
 		FD990AA725FB4E0100174252 /* SpoqaHanSansNeo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.ttf"; sourceTree = "<group>"; };
 		FD990AA825FB4E0200174252 /* SpoqaHanSansNeo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Thin.ttf"; sourceTree = "<group>"; };
@@ -71,6 +76,11 @@
 		FD990ACB25FB4E4700174252 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		FD990AD025FB4E8B00174252 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		FD990AD525FB4ED000174252 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		FDF820AB26019EA600C439CA /* VaccineCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineCenter.swift; sourceTree = "<group>"; };
+		FDF820B02601D19700C439CA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FDF820B52601D24800C439CA /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		FDF820BA2601D3C800C439CA /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		FDF820BF2601D4CA00C439CA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +131,11 @@
 		FD990A5225FB4D8B00174252 /* contactor-app */ = {
 			isa = PBXGroup;
 			children = (
+				FDF820A726019E9700C439CA /* Model */,
 				FD990AC225FB4E3100174252 /* Views */,
 				FD990AB425FB4E0900174252 /* Modifiers */,
 				FD990AA625FB4DF200174252 /* Fonts */,
 				FD990A8D25FB4DBA00174252 /* Components */,
-				FD990A8425FB4DAD00174252 /* Data */,
 				FD990A5325FB4D8B00174252 /* contactor_appApp.swift */,
 				FD990A5525FB4D8B00174252 /* ContentView.swift */,
 				FD990A5725FB4D8D00174252 /* Assets.xcassets */,
@@ -133,6 +143,7 @@
 				FD990A5925FB4D8D00174252 /* Preview Content */,
 				FD990AD025FB4E8B00174252 /* LocationFetcher.swift */,
 				FD990AD525FB4ED000174252 /* FontStyles.swift */,
+				FDF820BA2601D3C800C439CA /* RequestBuilder.swift */,
 			);
 			path = "contactor-app";
 			sourceTree = "<group>";
@@ -161,14 +172,6 @@
 				FD990A7225FB4D8D00174252 /* Info.plist */,
 			);
 			path = "contactor-appUITests";
-			sourceTree = "<group>";
-		};
-		FD990A8425FB4DAD00174252 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				FD990A8525FB4DB300174252 /* VaccineCenter.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		FD990A8D25FB4DBA00174252 /* Components */ = {
@@ -204,9 +207,21 @@
 			isa = PBXGroup;
 			children = (
 				FD990AC325FB4E3A00174252 /* Login.swift */,
+				FD22FDBD2603361300BC6A7B /* Join.swift */,
 				FD990ACB25FB4E4700174252 /* Main.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FDF820A726019E9700C439CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDF820AB26019EA600C439CA /* VaccineCenter.swift */,
+				FDF820B02601D19700C439CA /* User.swift */,
+				FDF820B52601D24800C439CA /* Auth.swift */,
+				FDF820BF2601D4CA00C439CA /* UserDefaults.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,13 +361,18 @@
 				FD990AC425FB4E3A00174252 /* Login.swift in Sources */,
 				FD990A5625FB4D8B00174252 /* ContentView.swift in Sources */,
 				FD990ACC25FB4E4700174252 /* Main.swift in Sources */,
+				FDF820BB2601D3C800C439CA /* RequestBuilder.swift in Sources */,
 				FD990A9A25FB4DCF00174252 /* Spacer.swift in Sources */,
 				FD990A5425FB4D8B00174252 /* contactor_appApp.swift in Sources */,
 				FD990ABE25FB4E2500174252 /* ShadowBox.swift in Sources */,
+				FDF820AC26019EA600C439CA /* VaccineCenter.swift in Sources */,
 				FD990AD625FB4ED000174252 /* FontStyles.swift in Sources */,
 				FD990AB625FB4E1200174252 /* TextField.swift in Sources */,
-				FD990A8625FB4DB300174252 /* VaccineCenter.swift in Sources */,
 				FD990AD125FB4E8B00174252 /* LocationFetcher.swift in Sources */,
+				FD22FDBE2603361300BC6A7B /* Join.swift in Sources */,
+				FDF820B12601D19700C439CA /* User.swift in Sources */,
+				FDF820C02601D4CA00C439CA /* UserDefaults.swift in Sources */,
+				FDF820B62601D24800C439CA /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

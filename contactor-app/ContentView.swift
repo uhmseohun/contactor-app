@@ -11,21 +11,35 @@ import SwiftUI
 import CoreLocation
 import CoreBluetooth
 
+class GlobalState: ObservableObject {
+    @Published var isAuthenticated: Bool
+    @Published var userIdentity: UserIdentity? = nil
+    
+    init() {
+        self.isAuthenticated = UserDefaults.standard.bool(forKey: UserDefaultsKeys.isAuthenticated.rawValue)
+        self.userIdentity = nil
+        if let savedIdentity = UserDefaults.standard.object(forKey: UserDefaultsKeys.userIdentity.rawValue) as? Data {
+            let decoder = JSONDecoder()
+            if let loadedIdentity = try? decoder.decode(UserIdentity.self, from: savedIdentity) {
+                self.userIdentity = loadedIdentity
+            }
+        }
+    }
+}
+
 struct ContentView: View {
+    @StateObject var globalState = GlobalState()
     var locationFetcher = LocationFetcher()
-    var localBeacon: CLBeaconRegion!
-    var beaconPeripheralData: NSDictionary!
-    var peripheralManager: CBPeripheralManager!
     
     init() {
         self.locationFetcher.start()
     }
     
     var body: some View {
-        if true {
-            MainView()
+        if globalState.isAuthenticated {
+            MainView().environmentObject(globalState)
         } else {
-            MainView()
+            LoginView().environmentObject(globalState)
         }
     }
 }

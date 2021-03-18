@@ -26,11 +26,17 @@ class LocationFetcher: NSObject, CLLocationManagerDelegate {
         manager.startUpdatingLocation()
     }
     
-    func sendToServer(lat: CLLocationDegrees, lon: CLLocationDegrees) {
-        let url = URL(string: "https://hookb.in/jek8mOp3xWseBB23Ojxr?lat=\(lat)&lon=\(lon)")
-        let session = URLSession(configuration: .default)
-        let task = session.dataTask(with: url!)
-        task.resume()
+    func sendToServer(lat: CLLocationDegrees, lng: CLLocationDegrees) {
+        let request = RequestBuilder(
+            path: "/location",
+            method: "POST",
+            bodyData: [
+                "lat": lat,
+                "lng": lng
+            ]
+        )
+        
+        URLSession.shared.dataTask(with: request).resume()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -39,7 +45,7 @@ class LocationFetcher: NSObject, CLLocationManagerDelegate {
         }
         
         let lat = lastLocation.coordinate.latitude
-        let lon = lastLocation.coordinate.longitude
-        sendToServer(lat: lat, lon: lon)
+        let lng = lastLocation.coordinate.longitude
+        sendToServer(lat: lat, lng: lng)
     }
 }
