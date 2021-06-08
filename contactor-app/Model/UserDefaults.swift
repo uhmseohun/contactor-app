@@ -10,7 +10,7 @@ import Foundation
 let version = 1
 
 enum UserDefaultsKeys: String {
-    case isAuthenticated = "isAuthenticated_v3"
-    case userIdentity = "userIdentity_v3"
-    case accessToken = "accessToken_v3"
+    case isAuthenticated = "isAuthenticated_v7"
+    case userIdentity = "userIdentity_v7"
+    case accessToken = "accessToken_v7"
 }

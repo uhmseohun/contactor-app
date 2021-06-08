@@ -24,19 +24,27 @@ struct LoginView: View {
         )
 
         URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data {
-                do {
-                    let decodedResponse = try JSONDecoder().decode(AuthenticationResponse.self, from: data)
-                    DispatchQueue.main.async {
-                        UserDefaults.standard.set(decodedResponse.accessToken, forKey: UserDefaultsKeys.accessToken.rawValue)
-                        UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isAuthenticated.rawValue)
-                        if let encodedIdentity = try? JSONEncoder().encode(decodedResponse.identity) {
-                            UserDefaults.standard.set(encodedIdentity, forKey: UserDefaultsKeys.userIdentity.rawValue)
+            if let httpResponse = response as? HTTPURLResponse {
+                if let data = data {
+                    do {
+                        if (httpResponse.statusCode / 100 == 4) {
+                            let alert = AlertBuilder(title: "로그인 실패", message: "아이디와 비밀번호를 확인해 주세요")
+                            return
                         }
-                        globalState.isAuthenticated = true
+                        let decodedResponse = try JSONDecoder().decode(AuthenticationResponse.self, from: data)
+                        
+                        DispatchQueue.main.async {
+                            UserDefaults.standard.set(decodedResponse.accessToken, forKey: UserDefaultsKeys.accessToken.rawValue)
+                            UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isAuthenticated.rawValue)
+                            if let encodedIdentity = try? JSONEncoder().encode(decodedResponse.identity) {
+                                UserDefaults.standard.set(encodedIdentity, forKey: UserDefaultsKeys.userIdentity.rawValue)
+                            }
+                            globalState.isAuthenticated = true
+                        }
                     }
-                } catch let error {
-                    print(error)
+                    catch let error {
+                        print(error)
+                    }
                 }
             }
         }.resume()
@@ -66,10 +74,11 @@ struct LoginView: View {
                         .foregroundColor(.white)
                 }
 
-                VSpacer(15)
+                VSpacer(10)
                 
                 Button(action: { self.showingJoinSheet = true }) {
                     Text("계정이 없으신가요?")
+                        .spoqa(.light, size: 14)
                 }
                 .sheet(isPresented: $showingJoinSheet) {
                     JoinView()

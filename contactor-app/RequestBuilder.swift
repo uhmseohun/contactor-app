@@ -7,7 +7,7 @@
 
 import Foundation
 
-let baseUrl = "https://061a48075b0a.ngrok.io"
+let baseUrl = "https://fed8ca0e0f0a.ngrok.io"
 
 func RequestBuilder(path: String, method: String, bodyData: [String: Any]?) -> URLRequest {
     let url = URL(string: baseUrl + path)!

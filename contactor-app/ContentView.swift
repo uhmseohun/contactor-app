@@ -22,6 +22,13 @@ class GlobalState: ObservableObject {
             let decoder = JSONDecoder()
             if let loadedIdentity = try? decoder.decode(UserIdentity.self, from: savedIdentity) {
                 self.userIdentity = loadedIdentity
+            } else {
+                // 정보를 불러올 수 없을 경우 로그아웃
+                self.isAuthenticated = false
+                self.userIdentity = nil
+                UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.accessToken.rawValue)
+                UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.userIdentity.rawValue)
+                UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.isAuthenticated.rawValue)
             }
         }
     }

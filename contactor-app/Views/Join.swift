@@ -15,6 +15,51 @@ struct JoinView: View {
     @State var userBirthdate: Date = Date();
     @State var userStreetAddress: String = "";
     @State var userDetailAddress: String = "";
+    @EnvironmentObject var globalState: GlobalState
+    
+    func sendJoinRequest() {
+        let request = RequestBuilder(
+            path: "/user",
+            method: "POST",
+            bodyData: [
+                "username": userId,
+                "password": userPw,
+                "name": userName,
+                "phone": userPhone,
+                "birthdate": userBirthdate,
+                "address": [
+                    "street": userStreetAddress,
+                    "detail": userDetailAddress
+                ]
+            ]
+        )
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let httpResponse = response as? HTTPURLResponse {
+                if let data = data {
+                    do {
+                        if (httpResponse.statusCode / 100 == 4) {
+                            print("로그인 실패")
+                            return
+                        }
+                        let decodedResponse = try JSONDecoder().decode(AuthenticationResponse.self, from: data)
+
+                        DispatchQueue.main.async {
+                            UserDefaults.standard.set(decodedResponse.accessToken, forKey: UserDefaultsKeys.accessToken.rawValue)
+                            UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isAuthenticated.rawValue)
+                            if let encodedIdentity = try? JSONEncoder().encode(decodedResponse.identity) {
+                                UserDefaults.standard.set(encodedIdentity, forKey: UserDefaultsKeys.userIdentity.rawValue)
+                            }
+                            globalState.isAuthenticated = true
+                        }
+                    }
+                    catch let error {
+                        print(error)
+                    }
+                }
+            }
+        }.resume()
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {

@@ -21,4 +21,5 @@ struct UserIdentity: Codable {
     var address: Address;
     var createdAt: String;
     var updatedAt: String;
+    var isPositive: Bool;
 };

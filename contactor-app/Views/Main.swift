@@ -6,11 +6,18 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct MainView: View {
     @EnvironmentObject var globalState: GlobalState
+
     @State private var vaccineCenters = [VaccineCenter]()
-    
+    @State private var vaccineCentersFetched = false
+
+    @State private var contactLogs = [ContactLog]()
+    @State private var contactLogsFetched = false
+
+
     func fetchNearbyVaccineCenters() {
         let request = RequestBuilder(
             path: "/vaccine-center/nearby?lat=37.3418973&lng=126.8293292",
@@ -24,6 +31,29 @@ struct MainView: View {
                     let decodedResponse = try JSONDecoder().decode(NearbyVaccineCenterResponse.self, from: data)
                     DispatchQueue.main.async {
                         self.vaccineCenters = decodedResponse.vaccineCenters
+                        self.vaccineCentersFetched = true
+                    }
+                } catch let error {
+                    print(error)
+                }
+            }
+        }.resume()
+    }
+    
+    func fetchWeeklyContactWithPositiverLogs() {
+        let request = RequestBuilder(
+            path: "/contact/weekly/positiver",
+            method: "GET",
+            bodyData: [:]
+        )
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let data = data {
+                do {
+                    let decodedResponse = try JSONDecoder().decode(WeeklyContactWithPositiverLogResponse.self, from: data)
+                    DispatchQueue.main.async {
+                        self.contactLogs = decodedResponse.contactLogs
+                        self.contactLogsFetched = true
                     }
                 } catch let error {
                     print(error)
@@ -37,8 +67,20 @@ struct MainView: View {
             VSpacer(15)
             HStack() {
                 VStack(alignment: .leading) {
-                    Text("좋은 하루 되세요,").spoqa(.thin, size: 30)
-                    Text("\(globalState.userIdentity!.name)님").spoqa(.bold, size: 30)
+                    HStack {
+                        Text("좋은 하루 되세요,").spoqa(.thin, size: 30)
+                        Spacer()
+                        Button(action: {
+                            globalState.isAuthenticated = false
+                            globalState.userIdentity = nil
+                            UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.accessToken.rawValue)
+                            UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.userIdentity.rawValue)
+                            UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.isAuthenticated.rawValue)
+                        }) {
+                            Text("로그아웃").spoqa(.light, size: 16)
+                        }
+                    }
+                    Text("\(globalState.userIdentity?.name ?? "엄서훈")님").spoqa(.bold, size: 30)
                 }
                 Spacer()
             }
@@ -47,11 +89,26 @@ struct MainView: View {
             VStack(alignment: .leading) {
                 Text("🔎 최근 1주일 간 확진자와의 접촉 이력").spoqa(.medium, size: 17)
                 VStack(alignment: .leading) {
-                    HStack {
-                        Image(systemName: "checkmark.shield.fill")
-                            .foregroundColor(.accentColor)
-                            .font(.system(size: 20))
-                        Text("확진자와 접촉한 이력이 없습니다.")
+                    if (contactLogs.count == 0) {
+                        HStack {
+                            Image(systemName: "checkmark.shield.fill")
+                                .foregroundColor(.accentColor)
+                                .font(.system(size: 20))
+                            Text("확진자와 접촉한 이력이 없습니다.")
+                        }
+                    } else {
+                        List(contactLogs, id: \._id) { log in
+                            VStack {
+                                HStack {
+                                    Text(log.user.name).spoqa(.regular, size: 15)
+                                        .lineLimit(1)
+                                    Text(log.createdAt).spoqa(.thin, size: 15)
+                                        .lineLimit(1)
+                                        .truncationMode(.tail)
+                                }
+                            }
+                        }
+                        .frame(height: 150)
                     }
                 }
                 .modifier(ShadowBoxModifier())
@@ -68,6 +125,7 @@ struct MainView: View {
                     }
                 }
                 .modifier(ShadowBoxModifier())
+                .onAppear(perform: fetchWeeklyContactWithPositiverLogs)
             }
             
             Spacer()
@@ -91,7 +149,7 @@ struct MainView: View {
             }
             
             VStack(alignment: .center) {
-                Text("정확한 정보를 얻기 위해 이 앱을 24시간 구동해 주세요")
+                Text("3617 엄서훈 공업일반 1人 1Project")
                     .spoqa(.thin, size: 14)
             }.frame(maxWidth: .infinity)
         }
